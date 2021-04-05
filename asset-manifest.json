@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/project-tree-generator/static/css/main.9b85c237.chunk.css",
+    "main.js": "/project-tree-generator/static/js/main.8931cd2c.chunk.js",
+    "main.js.map": "/project-tree-generator/static/js/main.8931cd2c.chunk.js.map",
+    "runtime-main.js": "/project-tree-generator/static/js/runtime-main.874ac32c.js",
+    "runtime-main.js.map": "/project-tree-generator/static/js/runtime-main.874ac32c.js.map",
+    "static/js/2.02e44ae8.chunk.js": "/project-tree-generator/static/js/2.02e44ae8.chunk.js",
+    "static/js/2.02e44ae8.chunk.js.map": "/project-tree-generator/static/js/2.02e44ae8.chunk.js.map",
+    "index.html": "/project-tree-generator/index.html",
+    "static/css/main.9b85c237.chunk.css.map": "/project-tree-generator/static/css/main.9b85c237.chunk.css.map",
+    "static/js/2.02e44ae8.chunk.js.LICENSE.txt": "/project-tree-generator/static/js/2.02e44ae8.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/project-tree-generator/static/media/Menlo-Regular.02bb0174.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.874ac32c.js",
+    "static/js/2.02e44ae8.chunk.js",
+    "static/css/main.9b85c237.chunk.css",
+    "static/js/main.8931cd2c.chunk.js"
+  ]
+}
