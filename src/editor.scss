@@ -1,0 +1,59 @@
+section {
+  display: flex;
+  justify-content: center;
+
+  > div {
+    > .editor {
+      overflow: scroll;
+      position: relative;
+      width: 600px;
+      height: 600px;
+      padding: 16px;
+      background-color: #f6f8fa;
+      border-radius: 6px;
+
+      > button {
+        position: absolute;
+        top: 8px;
+        left: calc(100% - 40px);
+        z-index: 1;
+        width: 32px;
+        height: 32px;
+        border: 1px solid #d1d5da;
+        border-radius: 4px;
+        background: #fafbfc;
+        cursor: pointer;
+        outline: none;
+
+        &.success > i {
+          background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy43OCA0LjIyYS43NS43NSAwIDAxMCAxLjA2bC03LjI1IDcuMjVhLjc1Ljc1IDAgMDEtMS4wNiAwTDIuMjIgOS4yOGEuNzUuNzUgMCAwMTEuMDYtMS4wNkw2IDEwLjk0bDYuNzItNi43MmEuNzUuNzUgMCAwMTEuMDYgMHoiLz48L3N2Zz4=);
+        }
+
+        > i {
+          width: 100%;
+          height: 100%;
+          display: block;
+          background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01Ljc1IDFhLjc1Ljc1IDAgMDAtLjc1Ljc1djNjMCAuNDE0LjMzNi43NS43NS43NWg0LjVhLjc1Ljc1IDAgMDAuNzUtLjc1di0zYS43NS43NSAwIDAwLS43NS0uNzVoLTQuNXptLjc1IDNWMi41aDNWNGgtM3ptLTIuODc0LS40NjdhLjc1Ljc1IDAgMDAtLjc1Mi0xLjI5OEExLjc1IDEuNzUgMCAwMDIgMy43NXY5LjVjMCAuOTY2Ljc4NCAxLjc1IDEuNzUgMS43NWg4LjVBMS43NSAxLjc1IDAgMDAxNCAxMy4yNXYtOS41YTEuNzUgMS43NSAwIDAwLS44NzQtMS41MTUuNzUuNzUgMCAxMC0uNzUyIDEuMjk4LjI1LjI1IDAgMDEuMTI2LjIxN3Y5LjVhLjI1LjI1IDAgMDEtLjI1LjI1aC04LjVhLjI1LjI1IDAgMDEtLjI1LS4yNXYtOS41YS4yNS4yNSAwIDAxLjEyNi0uMjE3eiIvPjwvc3ZnPg==);
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+
+      > div {
+        display: flex;
+        align-items: center;
+
+        > span {
+          cursor: default;
+        }
+
+        > input {
+          background: transparent;
+          border: none;
+          outline: none;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

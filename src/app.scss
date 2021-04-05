@@ -1,0 +1,21 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Menlo Regular', sans-serif;
+}
+
+main {
+  min-width: 680px;
+  margin: 0 auto;
+  overflow: scroll;
+}
+
+@font-face {
+  font-family: 'Menlo Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Menlo Regular'), url('Menlo-Regular.woff') format('woff');
+}
