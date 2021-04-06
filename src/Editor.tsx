@@ -134,19 +134,18 @@ function Tree({ treeContent, treeContents, setTreeContents, focusId, setFocusId,
             }
 
             if (e.key === 'ArrowUp') {
-              if (id !== 1) {
+              if (id !== 1 && e.keyCode === 38) {
                 setFocusId(id - 1);
                 setFocusIdChanged(true);
               }
             }
-            if (e.key === 'ArrowDown') {
+            if (e.key === 'ArrowDown' && e.keyCode === 38) {
               if (treeContents.length !== id) {
                 setFocusId(id + 1);
                 setFocusIdChanged(true);
               }
             }
             if (e.key === 'Enter' && e.keyCode === 13) {
-              console.log(e);
               e.preventDefault();
               const newTreeContents = [...treeContents];
               newTreeContents.splice(id, 0, { id: id + 1, text: '', depth, depthIndicator: '' });
