@@ -3,6 +3,17 @@ section {
   justify-content: center;
 
   > div {
+    > .github-repository-wrapper {
+      display: flex;
+      > input:first-child {
+        flex-basis: 0;
+        flex-grow: 1;
+      }
+      > input:nth-child(2) {
+        width: 100px;
+      }
+    }
+
     > .editor {
       overflow: scroll;
       position: relative;

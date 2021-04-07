@@ -190,10 +190,55 @@ export function Editor() {
 
   const [copyClicked, setCopyClicked] = useState(false);
 
+  const [githubRepositoryUrl, setGithubRepositoryUrl] = useState<string>('');
+
+  function onSubmit(e: React.MouseEvent<HTMLInputElement, MouseEvent> | React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    fetch(`https://api.github.com/repos/${githubRepositoryUrl}/git/trees/${branch}?recursive=1`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((res) => res.json())
+      .then((response) => {
+        setTreeContents(
+          response.tree.map((content: any, index: number) => {
+            const depth = content.path.split('/');
+            const textIndex = depth.length;
+            return {
+              id: index + 1,
+              depth: textIndex,
+              text: depth[textIndex - 1],
+              depthIndicator: '',
+            };
+          })
+        );
+        setRootText(githubRepositoryUrl.split('/')[1]);
+        console.log('Success:', JSON.stringify(response));
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        alert('깃허브로 부터 정보를 불러오는데 실패하였습니다.');
+      });
+  }
+
+  const [branch, setBranch] = useState<string>('main');
+
   return (
     <section>
       <div>
         <h2>Project Tree</h2>
+        <form className='github-repository-wrapper' onSubmit={onSubmit}>
+          <input
+            type='text'
+            value={githubRepositoryUrl}
+            placeholder='Generate by github repository url(e.g., woochanleee/project-tree-generator)'
+            onChange={(e) => setGithubRepositoryUrl(e.target.value)}
+          />
+          <input type='text' value={branch} onChange={(e) => setBranch(e.target.value)} placeholder='branch name' />
+          <input type='submit' onClick={onSubmit} />
+        </form>
         <div className='editor'>
           <button
             className={`copy-button ${copyClicked ? 'success' : ''}`}
