@@ -139,7 +139,7 @@ function Tree({ treeContent, treeContents, setTreeContents, focusId, setFocusId,
                 setFocusIdChanged(true);
               }
             }
-            if (e.key === 'ArrowDown' && e.keyCode === 38) {
+            if (e.key === 'ArrowDown' && e.keyCode === 40) {
               if (treeContents.length !== id) {
                 setFocusId(id + 1);
                 setFocusIdChanged(true);
