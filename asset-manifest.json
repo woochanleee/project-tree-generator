@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/project-tree-generator/static/css/main.ac7ae6f2.chunk.css",
-    "main.js": "/project-tree-generator/static/js/main.41408d23.chunk.js",
-    "main.js.map": "/project-tree-generator/static/js/main.41408d23.chunk.js.map",
+    "main.css": "/project-tree-generator/static/css/main.034bfa2b.chunk.css",
+    "main.js": "/project-tree-generator/static/js/main.839d413f.chunk.js",
+    "main.js.map": "/project-tree-generator/static/js/main.839d413f.chunk.js.map",
     "runtime-main.js": "/project-tree-generator/static/js/runtime-main.874ac32c.js",
     "runtime-main.js.map": "/project-tree-generator/static/js/runtime-main.874ac32c.js.map",
-    "static/js/2.8dc63a9c.chunk.js": "/project-tree-generator/static/js/2.8dc63a9c.chunk.js",
-    "static/js/2.8dc63a9c.chunk.js.map": "/project-tree-generator/static/js/2.8dc63a9c.chunk.js.map",
+    "static/js/2.59160cf9.chunk.js": "/project-tree-generator/static/js/2.59160cf9.chunk.js",
+    "static/js/2.59160cf9.chunk.js.map": "/project-tree-generator/static/js/2.59160cf9.chunk.js.map",
     "index.html": "/project-tree-generator/index.html",
-    "static/css/main.ac7ae6f2.chunk.css.map": "/project-tree-generator/static/css/main.ac7ae6f2.chunk.css.map",
-    "static/js/2.8dc63a9c.chunk.js.LICENSE.txt": "/project-tree-generator/static/js/2.8dc63a9c.chunk.js.LICENSE.txt",
+    "static/css/main.034bfa2b.chunk.css.map": "/project-tree-generator/static/css/main.034bfa2b.chunk.css.map",
+    "static/js/2.59160cf9.chunk.js.LICENSE.txt": "/project-tree-generator/static/js/2.59160cf9.chunk.js.LICENSE.txt",
     "static/media/app.scss": "/project-tree-generator/static/media/Menlo-Regular.02bb0174.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.874ac32c.js",
-    "static/js/2.8dc63a9c.chunk.js",
-    "static/css/main.ac7ae6f2.chunk.css",
-    "static/js/main.41408d23.chunk.js"
+    "static/js/2.59160cf9.chunk.js",
+    "static/css/main.034bfa2b.chunk.css",
+    "static/js/main.839d413f.chunk.js"
   ]
 }
