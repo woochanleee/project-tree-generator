@@ -26,7 +26,6 @@ section {
       > button {
         position: absolute;
         top: 8px;
-        left: calc(100% - 40px);
         z-index: 1;
         width: 32px;
         height: 32px;
@@ -35,6 +34,15 @@ section {
         background: #fafbfc;
         cursor: pointer;
         outline: none;
+
+        &:first-of-type {
+          left: calc(100% - 80px);
+          padding-top: 4px;
+        }
+
+        &:last-of-type {
+          left: calc(100% - 40px);
+        }
 
         &.success > i {
           background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy43OCA0LjIyYS43NS43NSAwIDAxMCAxLjA2bC03LjI1IDcuMjVhLjc1Ljc1IDAgMDEtMS4wNiAwTDIuMjIgOS4yOGEuNzUuNzUgMCAwMTEuMDYtMS4wNkw2IDEwLjk0bDYuNzItNi43MmEuNzUuNzUgMCAwMTEuMDYgMHoiLz48L3N2Zz4=);
