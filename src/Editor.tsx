@@ -232,6 +232,7 @@ export function Editor() {
     const folders = [zip.folder(rootText)];
 
     treeContents.forEach((content, index) => {
+      if (index !== 0) return;
       if (content.depth < treeContents[index - 1]?.depth) {
         folders.pop();
 
@@ -244,7 +245,7 @@ export function Editor() {
         }
       }
 
-      if (content.text.indexOf('.') >= 1) {
+      if (content.text.indexOf('.') >= 0) {
         folders[folders.length - 1]?.file(content.text, '');
       } else {
         folders.push(folders[folders.length - 1]?.folder(content.text) ?? null);
@@ -252,7 +253,6 @@ export function Editor() {
     });
 
     zip.generateAsync({ type: 'blob' }).then(function (content) {
-      // see FileSaver.js
       saveAs(content, 'project-tree.zip');
     });
   }, [treeContents]);
