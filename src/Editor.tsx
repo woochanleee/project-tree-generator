@@ -196,7 +196,8 @@ export function Editor() {
 
   function onSubmit(e: React.MouseEvent<HTMLInputElement, MouseEvent> | React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    fetch(`https://api.github.com/repos/${githubRepositoryUrl}/git/trees/${branch}?recursive=1`, {
+
+    fetch(`https://api.github.com/repos/${githubRepositoryUrl.split('https://github.com/').reverse()[0]}/git/trees/${branch}?recursive=1`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
