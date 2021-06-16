@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/project-tree-generator/static/css/main.034bfa2b.chunk.css",
-    "main.js": "/project-tree-generator/static/js/main.ef590a7c.chunk.js",
-    "main.js.map": "/project-tree-generator/static/js/main.ef590a7c.chunk.js.map",
+    "main.js": "/project-tree-generator/static/js/main.1d58e028.chunk.js",
+    "main.js.map": "/project-tree-generator/static/js/main.1d58e028.chunk.js.map",
     "runtime-main.js": "/project-tree-generator/static/js/runtime-main.874ac32c.js",
     "runtime-main.js.map": "/project-tree-generator/static/js/runtime-main.874ac32c.js.map",
     "static/js/2.59160cf9.chunk.js": "/project-tree-generator/static/js/2.59160cf9.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.874ac32c.js",
     "static/js/2.59160cf9.chunk.js",
     "static/css/main.034bfa2b.chunk.css",
-    "static/js/main.ef590a7c.chunk.js"
+    "static/js/main.1d58e028.chunk.js"
   ]
 }
