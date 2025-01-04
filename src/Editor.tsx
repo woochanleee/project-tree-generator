@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
-import './editor.scss';
+import './editor.css';
 
 import ClipBoard from 'clipboard';
 import JSZip from 'jszip';

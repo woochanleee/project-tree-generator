@@ -1,4 +1,4 @@
-import './app.scss';
+import './app.css';
 
 import { Header } from './Header';
 import { Editor } from './Editor';
