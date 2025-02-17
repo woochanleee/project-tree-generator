@@ -1,0 +1,10 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports.ts": "explicit",
+    "source.fixAll.ts": "explicit",
+    "source.fixAll.typescript": "explicit",
+    "source.organizeImports": "explicit",
+    "source.organizeLinkDefinitions": "explicit",
+    "source.sortImports": "explicit"
+  }
+}

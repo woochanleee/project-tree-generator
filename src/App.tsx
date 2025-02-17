@@ -1,8 +1,8 @@
 import './app.css';
 
-import { Header } from './Header';
-import { Editor } from './Editor';
-import { Footer } from './Footer';
+import { Editor } from './Editor.tsx';
+import { Footer } from './Footer.tsx';
+import { Header } from './Header.tsx';
 
 export function App() {
   return (

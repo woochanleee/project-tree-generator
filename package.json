@@ -1,43 +1,29 @@
 {
   "name": "project-tree-generator",
   "homepage": "https://woochanleee.github.io/project-tree-generator",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@types/clipboard": "^2.0.1",
-    "@types/file-saver": "^2.0.2",
-    "@types/node": "^12.0.0",
-    "@types/react": "17",
-    "@types/react-dom": "^17.0.0",
-    "clipboard": "^2.0.8",
-    "file-saver": "^2.0.5",
-    "jszip": "^3.6.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.1.2"
-  },
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "release": "gh-pages -d dist"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "@types/file-saver": "^2.0.7",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "clipboard": "^2.0.8",
+    "file-saver": "^2.0.5",
+    "gh-pages": "^6.3.0",
+    "globals": "^15.14.0",
+    "jszip": "^3.6.0",
+    "typescript": "^5.6.2",
+    "vite": "^6.0.5"
   },
-  "packageManager": "yarn@1.22.22"
+  "packageManager": "pnpm@10.4.1"
 }
