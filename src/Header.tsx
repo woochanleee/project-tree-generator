@@ -9,10 +9,10 @@ export function Header() {
             <h1>Project Tree Generator</h1>
           </div>
         </a>
-        <a href='https://hits.seeyoufarm.com'>
+        <a href='https://myhits.vercel.app'>
           <img
             alt='Hits'
-            src='https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fwoochanleee.github.io%2Fproject-tree-generator&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false'
+            src='https://myhits.vercel.app/api/hit/https%3A%2F%2Fwoochanleee.github.io%2Fproject-tree-generator%2F?color=green&label=hits&size=small'
           />
         </a>
         <a href='https://github.com/woochanleee/project-tree-generator/stargazers'>
